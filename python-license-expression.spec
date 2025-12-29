@@ -6,9 +6,13 @@ Summary:	license-expression is a comprehensive utility library to parse, compare
 URL:		https://pypi.org/project/license-expression/
 License:	Apache-2.0
 Group:		Development/Python
-BuildRequires:	python
 BuildSystem:	python
 BuildArch:	noarch
+BuildRequires:	python
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(setuptools-scm)
+BuildRequires:	python%{pyver}dist(wheel)
 
 %description
 license-expression is a comprehensive utility library to parse, compare, simplify and normalize license expressions (such as SPDX license expressions) using boolean logic.
